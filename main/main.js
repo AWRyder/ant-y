@@ -21,7 +21,7 @@ function setup() {
 
 
 function draw() {
-    noiseSeed(1231241057012123);
+    noiseSeed(1337);
     background(255);
     frameRate(60);
     let texture;
@@ -53,4 +53,10 @@ function draw() {
     }
     offset += .05;
 
+    //triangle()
+
+}
+
+function getMiddlePoint(x,y, tileWidth, tileHeight){
+    return [x * tileWidth + tileWidth * .5, y*tileHeight+ tileHeight*.5];
 }
